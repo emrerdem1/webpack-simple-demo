@@ -3,12 +3,12 @@ const glob = require('glob');
 
 module.exports = {
   entry: {
-    'bundle.js': glob
+    'bundle-demo': glob
       .sync('./src/*.?(js|css)')
       .map((f) => path.resolve(__dirname, f)),
   },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
 };
