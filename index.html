@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bundle Test</title>
+    <style>
+      #pulpo-container,
+      .parse-controller {
+        display: block;
+        margin-top: 100px;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div>It's just a simple test.</div>
@@ -13,6 +25,8 @@
     <button class="print">Main Update counter</button>
     <button class="multiply">PageA - Multiply counter</button>
     <button class="mutual-multiply">PageB - Multiply counter</button>
+    <button class="parse-controller">HTML elemenlarını parse et</button>
+    <div id="pulpo-container"></div>
     <script src="/dist/bundle-demo.js"></script>
   </body>
 </html>
