@@ -1,5 +1,5 @@
 const MOCK_PULPO_ENDPOINT =
-  'http://banefultest-env.eba-uicgekz4.us-east-2.elasticbeanstalk.com/loadElements';
+  'https://lambda-sdk-demo.netlify.app/.netlify/functions/demo/loadElements';
 
 const appendIframeWithHTML = (html) => {
   // Parse HTML to recognizable string format.
@@ -25,10 +25,8 @@ const appendIframeWithHTML = (html) => {
 
 const parsePulpoHTML = async () => {
   const response = await fetch(MOCK_PULPO_ENDPOINT, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'image/png',
-    },
+    method: 'GET',
+    headers: { 'Content-Type': 'application/json' },
   }).catch((error) => {
     console.log(error);
   });
